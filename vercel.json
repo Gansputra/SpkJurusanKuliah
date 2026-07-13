@@ -28,6 +28,7 @@
     "buildCommand": "npm run build",
     "env": {
         "APP_ENV": "production",
+        "APP_DEBUG": "true",
         "SESSION_DRIVER": "cookie",
         "CACHE_STORE": "array",
         "CACHE_DRIVER": "array",
