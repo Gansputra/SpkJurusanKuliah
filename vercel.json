@@ -29,8 +29,10 @@
     "env": {
         "APP_ENV": "production",
         "SESSION_DRIVER": "cookie",
-        "CACHE_STORE": "database",
-        "CACHE_DRIVER": "database",
+        "CACHE_STORE": "array",
+        "CACHE_DRIVER": "array",
+        "DB_CONNECTION": "sqlite",
+        "DB_DATABASE": ":memory:",
         "LOG_CHANNEL": "stderr",
         "VIEW_COMPILED_PATH": "/tmp"
     }

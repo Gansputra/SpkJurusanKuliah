@@ -53,17 +53,9 @@
                     <a href="#kriteria" class="text-sm text-gray-600 hover:text-blue-600 font-medium transition-colors">Kriteria</a>
                 </div>
                 <div class="flex items-center space-x-3">
-                    @auth
-                        <a href="{{ auth()->user()->isAdmin() ? route('admin.dashboard') : route('user.dashboard') }}"
-                           class="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors">
-                            Dashboard →
-                        </a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Masuk</a>
-                        <a href="{{ route('register') }}" class="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors">
-                            Daftar Gratis
-                        </a>
-                    @endauth
+                    <a href="{{ route('kalkulator') }}" class="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg">
+                        Mulai Rekomendasi →
+                    </a>
                 </div>
             </div>
         </div>
@@ -98,21 +90,10 @@
                         memilih jurusan kuliah yang paling sesuai dengan kemampuan, minat, dan tujuan karier.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        @auth
-                            <a href="{{ auth()->user()->isAdmin() ? route('admin.dashboard') : route('user.dashboard') }}"
-                               class="px-8 py-4 bg-white text-blue-700 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl text-center">
-                                Buka Dashboard →
-                            </a>
-                        @else
-                            <a href="{{ route('register') }}"
-                               class="px-8 py-4 bg-white text-blue-700 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl text-center">
-                                Mulai Sekarang →
-                            </a>
-                            <a href="{{ route('login') }}"
-                               class="px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-2xl hover:bg-white/20 transition-all duration-200 text-center">
-                                Sudah punya akun? Masuk
-                            </a>
-                        @endauth
+                        <a href="{{ route('kalkulator') }}"
+                           class="px-8 py-4 bg-white text-blue-700 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl text-center">
+                            Mulai Cari Rekomendasi →
+                        </a>
                     </div>
                     <div class="mt-10 flex items-center justify-center lg:justify-start space-x-8">
                         <div class="text-center">
@@ -310,20 +291,14 @@
                 Siap Menemukan Jurusan Terbaikmu?
             </h2>
             <p class="text-blue-100 text-lg mb-8">
-                Bergabung sekarang dan dapatkan rekomendasi jurusan kuliah berbasis ilmiah yang dipersonalisasi untukmu.
+                Gunakan kalkulator berbasis ilmiah AHP dan TOPSIS sekarang untuk mencari alternatif jurusan terbaik yang sesuai dengan minat, bakat, nilai akademik, dan anggaranmu secara instan.
             </p>
-            @guest
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('register') }}"
-                   class="px-8 py-4 bg-white text-blue-700 font-bold rounded-2xl hover:bg-blue-50 transition-all shadow-lg">
-                    Daftar Gratis Sekarang →
-                </a>
-                <a href="{{ route('login') }}"
-                   class="px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-2xl hover:bg-white/20 transition-all">
-                    Masuk ke Akun
+                <a href="{{ route('kalkulator') }}"
+                   class="px-10 py-4 bg-white text-blue-700 font-bold rounded-2xl hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl text-center font-bold">
+                    Buka Kalkulator Rekomendasi →
                 </a>
             </div>
-            @endguest
         </div>
     </section>
 
