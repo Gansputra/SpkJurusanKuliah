@@ -23,5 +23,7 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ]
+    ],
+    "outputDirectory": "public",
+    "buildCommand": "npm run build"
 }
