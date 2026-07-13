@@ -1,4 +1,5 @@
 <?php
+// Cache Buster: 1
 
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
