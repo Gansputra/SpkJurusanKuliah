@@ -25,7 +25,7 @@
         }
     ],
     "outputDirectory": "public",
-    "buildCommand": "npm run build",
+    "buildCommand": "php artisan package:discover && npm run build",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
