@@ -25,5 +25,13 @@
         }
     ],
     "outputDirectory": "public",
-    "buildCommand": "npm run build"
+    "buildCommand": "npm run build",
+    "env": {
+        "APP_ENV": "production",
+        "SESSION_DRIVER": "cookie",
+        "CACHE_STORE": "database",
+        "CACHE_DRIVER": "database",
+        "LOG_CHANNEL": "stderr",
+        "VIEW_COMPILED_PATH": "/tmp"
+    }
 }
