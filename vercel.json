@@ -25,7 +25,7 @@
         }
     ],
     "outputDirectory": "public",
-    "buildCommand": "php artisan package:discover && npm run build",
+    "buildCommand": "npm run build",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
@@ -35,6 +35,11 @@
         "DB_CONNECTION": "sqlite",
         "DB_DATABASE": ":memory:",
         "LOG_CHANNEL": "stderr",
-        "VIEW_COMPILED_PATH": "/tmp"
+        "VIEW_COMPILED_PATH": "/tmp",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php"
     }
 }
