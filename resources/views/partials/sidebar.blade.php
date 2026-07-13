@@ -134,6 +134,13 @@
         @endif
     </nav>
 
+    <!-- Developer Credit -->
+    <div class="px-4 py-3 border-t border-blue-700/50">
+        <p class="text-blue-300 text-xs font-light text-center">
+            Developed by <span class="font-semibold text-white">Ganang</span>
+        </p>
+    </div>
+
     <!-- Logout -->
     <div class="px-3 py-4 border-t border-blue-700">
         <form method="POST" action="{{ route('logout') }}">

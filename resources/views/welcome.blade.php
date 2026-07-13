@@ -305,7 +305,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-sm">© {{ date('Y') }} SPK Pemilihan Jurusan Kuliah. Dibuat dengan ❤️ menggunakan Laravel & Metode AHP+TOPSIS.</p>
+            <p class="text-sm">© {{ date('Y') }} SPK Pemilihan Jurusan Kuliah. Dibuat oleh <span class="font-semibold text-white">Ganang</span> dengan ❤️ menggunakan Laravel & Metode AHP+TOPSIS.</p>
         </div>
     </footer>
 
